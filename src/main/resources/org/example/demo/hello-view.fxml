@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.HelloController">
+   <children>
+      <TableView fx:id="tableEmployee" layoutX="14.0" layoutY="161.0" prefHeight="200.0" prefWidth="446.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="216.0" text="Name" />
+          <TableColumn fx:id="colSalary" prefWidth="229.0" text="Salary" />
+        </columns>
+      </TableView>
+      <TextField fx:id="inpMin" layoutX="85.0" layoutY="44.0" prefHeight="24.0" prefWidth="69.0" />
+      <TextField fx:id="inpMax" layoutX="237.0" layoutY="44.0" prefHeight="24.0" prefWidth="69.0" />
+      <Button fx:id="btnGenerate" layoutX="475.0" layoutY="44.0" mnemonicParsing="false" onAction="#clickGenerate" onMouseClicked="#clickGenerate" text="Generate!" />
+      <Label layoutX="36.0" layoutY="48.0" text="Min" />
+      <Label layoutX="194.0" layoutY="48.0" text="Max" />
+   </children>
+</AnchorPane>
